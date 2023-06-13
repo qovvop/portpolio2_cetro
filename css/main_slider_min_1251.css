@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@media (min-width:1251px){
+    /*슬라이더공통*/
+    #slider {margin:0 auto; background-color:#f3f8ff; display:flex; justify-content:center; align-items:center;}
+    #slider img:nth-child(2) {z-index:10; width:50%; height:70%;}
+    .slider_box {display:flex; justify-content:space-between; z-index:30;}
+    .slider_leftbox {display:flex; flex-flow:column wrap;}
+    .slider_leftbox p {font-weight:500; line-height:25px; color:#02033b;}
+    .slider_leftbox h1 {color:#02033b; letter-spacing:-2px;}
+    .slider_button_box {display:flex; flex-flow:column wrap; justify-content:center; align-items:flex-start;}
+    .slider_leftbox a:first-child {background-color:#FFC247; padding:18px 20px; margin:0 50px 0 0; border-radius:40px; border:0; color:#02033b;}
+    .slider_leftbox a:last-child {background-color:transparent; margin:20px 0 0 0; padding:16px 20px; border-radius:40px; border:2px solid#02033b; color:#02033b;}
+    .slider_leftbox a:last-child:hover {color:#584cff; border:2px solid #584cff;}
+    .slider_leftbox a span {font-size:20px; font-weight:bold; letter-spacing:-1px;}
+
+    /*슬라이더*/
+    #slider {width:100%; height:775px; padding:90px 0 96px 0; background-color:#f3f8ff; background-image:url("../img/slider_img1.png"); background-repeat:no-repeat, no-repeat; background-size:1600px, 850px; background-position:-200% 15%, 80% 10%;}
+    .slider_box {width:1150px; height:640px; margin:0px 260px 0 0;}
+    .slider_leftbox {width:72%; height:100%; padding:100px 60px 0 0;}
+    .slider_leftbox h1 {font-size:72px;}
+    .slider_leftbox p {font-size:23px; margin:70px 0 80px 0; line-height:35px; z-index:3;}
+    .slider_button_box {width:100%; height:15%; flex-flow:row wrap; justify-content:flex-start;}
+    .slider_leftbox a:first-child {width:205px; height:20px; z-index:3;}
+    .slider_leftbox a:last-child {width:196px; height:19px; margin:-1px 0 0 0; z-index:3;}
+    .slider_rightbox {width:30%; height:100%; float:right; }
+    .slider_rightbox img {width:100%; height:100%; z-index:3;}
+    .slider_t {width:800px; height:820px; position:absolute; background-image:url("../img/slider_img3.png"); background-size:cover; background-position:15% 15%; z-index:1; bottom:-30px; right:0px; opacity:0.8;}
+}

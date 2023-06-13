@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+@media(min-width:1044px){
+    .content5 {width:100%; height:300px; padding:60px 0; background: transparent linear-gradient(180deg, #2925CC 0%, #4B48E5 100%) 0% 0% no-repeat padding-box; display:flex; flex-flow:row nowrap; justify-content:center; align-items:center;}
+    .content5_box {width:50%; height:95%; display:flex; flex-flow:column wrap; justify-content:space-around; align-items:center; line-height:1.4; text-align:center;}
+    .content5_box p:first-child {font-size:36px; font-weight:bold; color:#fff; margin:0 50px;} 
+    .content5_box p:nth-child(2) {font-size:18px; font-weight:600; margin:30px 0; color: #fff;}
+    
+    .content5_bottom a:first-child {width:240px; height:30px; background-color:#FFC247; padding:15px 20px; margin:0 30px 0 0; border-radius:40px; border:0; color:#02033b;}
+    .content5_bottom a:last-child {width:240px; height:24px; background-color:transparent; padding:16px 20px; border-radius:40px; border:2px solid#fff; color:#fff;}
+    .content5_bottom a:last-child:hover {color:#FFC247; border:2px solid #FFC247;}
+    .content5_bottom a span {font-size:20px; font-weight:bold; letter-spacing:-1px;}
+}

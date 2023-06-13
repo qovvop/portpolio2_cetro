@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <title>Cetro_common</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.4.min.js"></script>
+    <script>
+        /***       NAV       ***/
+        $(document).ready(function () {
+            $(".navbar_burger").click(function () {
+                $(".navbar").slideToggle();
+            });
+
+            $(window).resize(function () {
+                if (window.innerWidth >= 1200) {
+                    $(".navbar").show();
+                }
+            });
+
+            $(window).resize(function () {
+                if (window.innerWidth <= 1200) {
+                    $(".navbar").hide();
+                }
+            });
+
+            $(window).resize(function () {
+                if (window.innerWidth >= 1200) {
+                    $(".navbutton").show();
+                }
+            });
+
+            $(window).resize(function () {
+                if (window.innerWidth <= 1200) {
+                    $(".navbutton").hide();
+                }
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div id=wrap>
+        <!------------------------------헤더----------------------------------->
+        <header>
+            <div class="navbar_mobile">
+                <div class="logo">
+                    <a href="#"><img src="img/cetro_logo.png" alt="cetrologo"></a>
+                </div>
+                <img src="img/2line.png" alt="burgericon" class="navbar_burger">
+            </div>
+
+            <div class="navbar">
+                <ul class="nav_ul">
+                    <li><a href="#">iphone</a></li>
+                    <li><a href="#">Android</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Company <b>∨</b></a></li>
+                </ul>
+                <button class="navbutton">sing in</button>
+            </div>
+        </header>
+
+        <!------------------------------하단-------------------------------->
+        <footer>
+            <div class="footer_leftbox">
+                <div class="footer_leftbox_top">
+                    <div class="footer_leftbox_1">
+                        <p>Scan. Detect. Remove.</p>
+                        <div class="snsicon">
+                            <img src="img/twitter.png" alt="twiter">
+                            <img src="img/facebook.png" alt="facebook">
+                            <img src="img/youtube.png" alt="youtube">
+                        </div>
+                        <p>Copyright © 2023 Certo Software Limited | Registered in England & Wales No. 10072356</p>
+                        <p>Designed & developed by Bigger Picture</p>
+                    </div>
+
+                    <div class="footer_leftbox_2">
+                        <p>Cetro</p>
+                        <div class="footer_line"></div>
+                        <ul>
+                            <li><a href="#">→ iPhone</a></li>
+                            <li><a href="#">→ Android</a></li>
+                            <li><a href="#">→ Help</a></li>
+                            <li><a href="#">→ About</a></li>
+                            <li><a href="#">→ Insight</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer_leftbox_3">
+                    <div class="footer_leftbox_3_top">
+                        <img src="img/footer_img_1.png" alt="cyberessential">
+                        <img src="img/footer_img_2.png" alt="stalkerware">
+                    </div>
+                    <p>Apple, the Apple logo, and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Android, Google Play and the Google Play logo are trademarks of Google LLC.</p>
+                </div>
+            </div>
+
+
+            <div class="footer_rightbox">
+                <div class="footer_rightbox_1">
+                    <p>Sign up to our newsletter</p>
+                    <p>Receive the latest mobile security news, exclusive discounts & offers straight to your inbox!</p>
+                    <form>
+                        <input type="text" placeholder="Email address">
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+                <div class="footer_rightbox_2">
+                    <div class="footer_rightbox_2_box">
+                        <img src="img/footer_img_3.png" alt="logo">
+                    </div>
+                    <div class="footer_rightbox_2_box">
+                        <img src="img/footer_img_4.png" alt="logo">
+                    </div>
+                    <div class="footer_rightbox_2_box">
+                        <img src="img/footer_img_5.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
